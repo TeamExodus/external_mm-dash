@@ -27,19 +27,19 @@ LOCAL_SHARED_LIBRARIES :=       \
     libui                       \
 
 LOCAL_C_INCLUDES := \
-        $(TOP)/frameworks/av/media/libstagefright/timedtext           \
-	$(TOP)/frameworks/native/include/media/hardware               \
-	$(TOP)/frameworks/native/include/media/openmax                \
-	$(TOP)/frameworks/av/media/libstagefright/httplive            \
-	$(TOP)/frameworks/av/media/libmediaplayerservice/nuplayer     \
-	$(TOP)/frameworks/av/media/libmediaplayerservice              \
-	$(TOP)/frameworks/av/media/libstagefright/include             \
-	$(TOP)/frameworks/av/media/libstagefright/mpeg2ts             \
-	$(TOP)/frameworks/av/media/libstagefright/rtsp                \
-	$(TOP)/hardware/qcom/media/mm-core/inc                        \
-	$(TOP)/hardware/qcom/display/libgralloc                       \
-        $(LOCAL_PATH)/..                                            \
-	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+        $(TOP)/frameworks/av/media/libstagefright/timedtext                 \
+	$(TOP)/frameworks/native/include/media/hardware                         \
+	$(TOP)/frameworks/native/include/media/openmax                          \
+	$(TOP)/frameworks/av/media/libstagefright/httplive                      \
+	$(TOP)/frameworks/av/media/libmediaplayerservice/nuplayer               \
+	$(TOP)/frameworks/av/media/libmediaplayerservice                        \
+	$(TOP)/frameworks/av/media/libstagefright/include                       \
+	$(TOP)/frameworks/av/media/libstagefright/mpeg2ts                       \
+	$(TOP)/frameworks/av/media/libstagefright/rtsp                          \
+	$(TOP)/hardware/qcom/media${TARGET_QCOM_MEDIA_VARIANT}/mm-core/inc      \
+	$(TOP)/hardware/qcom/display${TARGET_QCOM_DISPLAY_VARIANT}/libgralloc   \
+    $(LOCAL_PATH)/..                                                        \
+	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include                      \
 
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
